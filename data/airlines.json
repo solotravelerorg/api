@@ -1,0 +1,114 @@
+[
+  {
+    "iata": "AC",
+    "icao": "ACA",
+    "name": "Air Canada",
+    "country": "Canada",
+    "country_code": "CA"
+  },
+  {
+    "iata": "WS",
+    "icao": "WJA",
+    "name": "WestJet",
+    "country": "Canada",
+    "country_code": "CA"
+  },
+  {
+    "iata": "AA",
+    "icao": "AAL",
+    "name": "American Airlines",
+    "country": "United States",
+    "country_code": "US"
+  },
+  {
+    "iata": "DL",
+    "icao": "DAL",
+    "name": "Delta Air Lines",
+    "country": "United States",
+    "country_code": "US"
+  },
+  {
+    "iata": "UA",
+    "icao": "UAL",
+    "name": "United Airlines",
+    "country": "United States",
+    "country_code": "US"
+  },
+  {
+    "iata": "BA",
+    "icao": "BAW",
+    "name": "British Airways",
+    "country": "United Kingdom",
+    "country_code": "GB"
+  },
+  {
+    "iata": "AF",
+    "icao": "AFR",
+    "name": "Air France",
+    "country": "France",
+    "country_code": "FR"
+  },
+  {
+    "iata": "LH",
+    "icao": "DLH",
+    "name": "Lufthansa",
+    "country": "Germany",
+    "country_code": "DE"
+  },
+  {
+    "iata": "IB",
+    "icao": "IBE",
+    "name": "Iberia",
+    "country": "Spain",
+    "country_code": "ES"
+  },
+  {
+    "iata": "AZ",
+    "icao": "ITY",
+    "name": "ITA Airways",
+    "country": "Italy",
+    "country_code": "IT"
+  },
+  {
+    "iata": "JL",
+    "icao": "JAL",
+    "name": "Japan Airlines",
+    "country": "Japan",
+    "country_code": "JP"
+  },
+  {
+    "iata": "SQ",
+    "icao": "SIA",
+    "name": "Singapore Airlines",
+    "country": "Singapore",
+    "country_code": "SG"
+  },
+  {
+    "iata": "EK",
+    "icao": "UAE",
+    "name": "Emirates",
+    "country": "United Arab Emirates",
+    "country_code": "AE"
+  },
+  {
+    "iata": "QF",
+    "icao": "QFA",
+    "name": "Qantas",
+    "country": "Australia",
+    "country_code": "AU"
+  },
+  {
+    "iata": "LA",
+    "icao": "LAN",
+    "name": "LATAM Airlines",
+    "country": "Chile",
+    "country_code": "CL"
+  },
+  {
+    "iata": "ET",
+    "icao": "ETH",
+    "name": "Ethiopian Airlines",
+    "country": "Ethiopia",
+    "country_code": "ET"
+  }
+]

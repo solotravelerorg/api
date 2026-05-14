@@ -1,0 +1,197 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Solo Traveler API",
+    "version": "0.2.0",
+    "description": "Public travel reference data API for Solo Traveler."
+  },
+  "servers": [
+    {
+      "url": "https://api.solotraveler.org"
+    }
+  ],
+  "paths": {
+    "/v1/countries": {
+      "get": {
+        "summary": "List countries",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Country list response"
+          }
+        }
+      }
+    },
+    "/v1/countries/{code}": {
+      "get": {
+        "summary": "Get country by alpha-2, alpha-3, or numeric code",
+        "parameters": [
+          {
+            "name": "code",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Country record"
+          },
+          "404": {
+            "description": "Country not found"
+          }
+        }
+      }
+    },
+    "/v1/airports": {
+      "get": {
+        "summary": "List airports",
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Airport list response"
+          }
+        }
+      }
+    },
+    "/v1/airports/{iata}": {
+      "get": {
+        "summary": "Get airport by IATA or ICAO code",
+        "parameters": [
+          {
+            "name": "iata",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Airport record"
+          },
+          "404": {
+            "description": "Airport not found"
+          }
+        }
+      }
+    },
+    "/v1/airlines": {
+      "get": {
+        "summary": "List airlines",
+        "parameters": [
+          {
+            "name": "country",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "offset",
+            "in": "query",
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Airline list response"
+          }
+        }
+      }
+    },
+    "/v1/airlines/{iata}": {
+      "get": {
+        "summary": "Get airline by IATA or ICAO code",
+        "parameters": [
+          {
+            "name": "iata",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Airline record"
+          },
+          "404": {
+            "description": "Airline not found"
+          }
+        }
+      }
+    }
+  }
+}

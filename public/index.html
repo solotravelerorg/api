@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solo Traveler API</title>
+  <meta name="description" content="Public travel reference data API for countries, airports, airlines, and future solo travel intelligence datasets.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <p class="text-uppercase small text-muted mb-2">Solo Traveler API</p>
+        <h1 class="display-5 fw-bold">Travel reference data for builders, researchers, and publishers.</h1>
+        <p class="lead mt-3">Use clean JSON endpoints for country, airport, and airline reference data.</p>
+        <div class="d-flex gap-2 mt-4 flex-wrap">
+          <a class="btn btn-primary" href="/docs/">View API Docs</a>
+          <a class="btn btn-outline-secondary" href="/openapi.json">OpenAPI JSON</a>
+        </div>
+        <hr class="my-5">
+        <h2 class="h4">Example endpoints</h2>
+        <pre class="bg-light p-3 rounded"><code>GET /v1/countries
+GET /v1/countries/CA
+GET /v1/airports?country=CA
+GET /v1/airlines/AC</code></pre>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

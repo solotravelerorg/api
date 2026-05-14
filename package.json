@@ -1,0 +1,14 @@
+{
+  "name": "solotraveler-api",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Cloudflare Pages API for Solo Traveler public travel reference data.",
+  "scripts": {
+    "validate": "node scripts/validate-data.js",
+    "dev": "wrangler pages dev public --compatibility-date=2026-05-14"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  },
+  "type": "module"
+}

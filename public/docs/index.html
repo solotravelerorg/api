@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Solo Traveler API Documentation</title>
+  <meta name="description" content="Documentation for Solo Traveler API endpoints, query parameters, and example responses.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <main class="container py-5">
+    <h1 class="fw-bold">Solo Traveler API Documentation</h1>
+    <p class="lead">Base URL: <code>https://api.solotraveler.org</code></p>
+
+    <section class="mt-5">
+      <h2>Countries</h2>
+      <p>The countries endpoint returns 249 ISO 3166-1 country and territory records.</p>
+      <pre class="bg-light p-3 rounded"><code>GET /v1/countries
+GET /v1/countries/{code}</code></pre>
+      <p>Supported query parameters:</p>
+      <table class="table">
+        <thead><tr><th>Parameter</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>q</code></td><td>Search by country name, official name, alpha-2 code, alpha-3 code, or numeric code.</td></tr>
+          <tr><td><code>limit</code></td><td>Limit number of records returned.</td></tr>
+          <tr><td><code>offset</code></td><td>Skip records for pagination.</td></tr>
+        </tbody>
+      </table>
+      <pre class="bg-light p-3 rounded"><code>curl "https://api.solotraveler.org/v1/countries?q=canada"</code></pre>
+    </section>
+
+    <section class="mt-5">
+      <h2>Airports</h2>
+      <p>The airports endpoint currently provides a starter sample of major international airports.</p>
+      <pre class="bg-light p-3 rounded"><code>GET /v1/airports
+GET /v1/airports/{iata}</code></pre>
+      <p>Supported query parameters: <code>country</code>, <code>q</code>, <code>limit</code>, and <code>offset</code>.</p>
+    </section>
+
+    <section class="mt-5">
+      <h2>Airlines</h2>
+      <p>The airlines endpoint currently provides a starter sample of major international airlines.</p>
+      <pre class="bg-light p-3 rounded"><code>GET /v1/airlines
+GET /v1/airlines/{iata}</code></pre>
+      <p>Supported query parameters: <code>country</code>, <code>q</code>, <code>limit</code>, and <code>offset</code>.</p>
+    </section>
+
+    <section class="mt-5">
+      <h2>OpenAPI</h2>
+      <p>A machine-readable API specification is available at <a href="/openapi.json"><code>/openapi.json</code></a>.</p>
+    </section>
+  </main>
+</body>
+</html>
